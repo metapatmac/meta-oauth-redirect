@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OAuth Redirect</title>
+  </head>
+  <body>
+    <h1>✅ Redirect Successful</h1>
+    <p>Copy your token from the URL bar if it's present.</p>
+    <script>
+      const hash = window.location.hash;
+      if (hash) {
+        const div = document.createElement('div');
+        div.innerText = "🔑 Token: " + hash;
+        document.body.appendChild(div);
+      }
+    </script>
+  </body>
+</html>
